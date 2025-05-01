@@ -589,8 +589,8 @@ form textarea{
         padding: 0 1rem;
     }
     .image-wrapper {
-        max-width: 100vw;
-        max-height: 45vh;
+        max-width: 110vw;
+        max-height: 46vh;
         background-color: #4a00e0;
         border-radius: 50% / 45%;
         overflow: hidden;
