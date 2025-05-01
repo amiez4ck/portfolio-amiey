@@ -265,12 +265,24 @@ header.shadow{
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
 }
 .bars-box h3, span{
     font-size: 1.1rem;
     font-weight: 500;
 }
+
+.bars-box .label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.bars-box .label h3,
+.bars-box .label span {
+  font-size: 16px;
+}
+
 .light-bar{
     position: absolute;
     bottom: 0;
@@ -641,5 +653,11 @@ form textarea{
     width: 90%;
     max-width: 200px;
     font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .bars-box .label h3,
+  .bars-box .label span {
+    font-size: 14px;
   }
 }
