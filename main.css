@@ -100,7 +100,8 @@ header.shadow{
 
 .home-img img{
     width: 225px;
-    height: 280px;
+    height: auto;
+    max-width: 100%
     object-fit: cover;
     object-position: top center;
     border-radius: 80%;
@@ -211,7 +212,8 @@ header.shadow{
     margin-top: 2rem;
 }
 .about-img img{
-    width: 60%;
+    width: 100%;
+    height: auto;
     border-radius: 0.5rem;
 }
 .about-text{
@@ -245,7 +247,8 @@ header.shadow{
     margin-top: 4rem;
 }
 .skills-img img{
-    width: 70%;
+    width: 100%;
+    height: auto;
     padding-left: 6rem;
     object-position: center;
     margin-left: 10px;
@@ -341,6 +344,7 @@ header.shadow{
 }
 .portfolio-img img{
     width: 100%;
+    height: auto;
     display: block;
 }
 .portfolio-img img:hover{
@@ -579,5 +583,15 @@ form textarea{
     .contact-form form{
         width: auto;
     }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-toggle {
+    display: block;
+  }
 }
 
