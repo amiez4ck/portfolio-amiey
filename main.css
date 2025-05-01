@@ -551,7 +551,7 @@ form textarea{
         display: flex;
         flex-direction: column;
         background-color: var(--bg-color);
-        box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+        box-shadow: 0 4px 4px rgba(0 0 0 / 10%);
         transition: 0.2s ease;
         text-align: center;
     }
@@ -577,14 +577,14 @@ form textarea{
         padding: 2rem 1rem;
     }
     .home-text{
-        grid-column: auti;
+        grid-column: auto;
         padding-left: 1.4rem;
         padding: 0 1rem;
     }
     .home-img{
         order: initial;
         margin: auto;
-        width: 180px
+        width: 180px;
     }
     .about-container{
         grid-template-columns: 1fr;
