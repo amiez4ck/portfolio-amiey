@@ -215,7 +215,13 @@ header.shadow{
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
 }
+
+.about-img img:hover {
+  transform: scale(1.02);
+}
+
 .about-text{
     margin-left: -20%;
     margin-top: 50px;
@@ -609,5 +615,31 @@ form textarea{
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 90%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    padding: 0 20px;
+  }
+
+  .btn {
+    width: 90%;
+    max-width: 200px;
+    font-size: 16px;
   }
 }
