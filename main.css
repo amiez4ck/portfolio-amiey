@@ -79,27 +79,26 @@ header.shadow{
     cursor: pointer;
 }
 .home{
-    display: flex;
     position: relative;
+    display: flex;
     width: 100%;
     min-height: 100vh;
-    padding: 2rem 5%;
+    padding: 4rem 5%;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 2rem;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .home-img
 {
     order: 0;
     display: flex;
-    flex: 1;
     justify-content: center;
     align-items: center;
     margin: auto;
-    max-width: 400px;
 }
+
 
 @keyframes float {
     0%, 100% { transform: translateY(0); }
@@ -128,11 +127,10 @@ header.shadow{
     object-position: top;
 }
 
-
 .home-text {
     flex: 1;
     text-align: justify;
-    max-width: 500px;
+    max-width: 50%;
     padding: 0;
     margin: 0;
 }
