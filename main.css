@@ -83,7 +83,7 @@ header.shadow{
     width: 100%;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 0.2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 1rem;
 }
@@ -223,7 +223,7 @@ header.shadow{
 }
 
 .about-text{
-    margin-left: -20%;
+    margin: 0;
     margin-top: 50px;
 }
 .about-text p{
@@ -255,9 +255,11 @@ header.shadow{
 .skills-img img{
     width: 100%;
     height: auto;
-    padding-left: 6rem;
+    padding: 0;
     object-position: center;
-    margin-left: 10px;
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
 }
 .bars-box{
     position: relative;
@@ -555,13 +557,18 @@ form textarea{
     }
     .home{
         grid-template-columns: 0.5fr 3fr;
+        text-align: center;
+        padding: 2rem 1rem;
     }
     .home-text{
-        grid-column: 1/3;
+        grid-column: auti;
         padding-left: 1.4rem;
+        padding: 0 1rem;
     }
     .home-img{
         order: initial;
+        margin: auto;
+        width: 180px
     }
     .about-container{
         grid-template-columns: 1fr;
@@ -646,7 +653,8 @@ form textarea{
   }
 
   .about-text {
-    padding: 0 20px;
+    padding: 0 1rem;
+    text-align: center;
   }
 
   .btn {
