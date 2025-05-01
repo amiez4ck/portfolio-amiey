@@ -106,7 +106,7 @@ header.shadow{
 
 
 .home-img img{
-    width: 320px;
+    width: 316px;
     height: auto;
     max-width: 100%;
     flex-wrap: 1;
@@ -122,6 +122,7 @@ header.shadow{
 
 .home-text {
     flex: 1;
+    text-align: justify;
     max-width: 50%;
     padding: 0;
     margin: 0;
@@ -154,6 +155,7 @@ header.shadow{
     font-size: var(--p-font);
     font-weight: 400;
     margin: 0.7rem 0 1rem;
+    text-align: justify;
 }
 .social{
     display: flex;
@@ -551,7 +553,7 @@ form textarea{
         display: flex;
         flex-direction: column;
         background-color: var(--bg-color);
-        box-shadow: 0 4px 4px rgba(0 0 0 / 10%);
+        box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
         transition: 0.2s ease;
         text-align: center;
     }
@@ -574,7 +576,10 @@ form textarea{
     .home{
         grid-template-columns: 0.5fr 3fr;
         text-align: center;
-        padding: 2rem 1rem;
+        padding: 3rem 1rem;
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
     }
     .home-text{
         grid-column: auto;
@@ -583,8 +588,8 @@ form textarea{
     }
     .home-img{
         order: initial;
-        margin: auto;
-        width: 180px;
+        margin: 0 auto;
+        width: 200px;
     }
     .about-container{
         grid-template-columns: 1fr;
@@ -616,6 +621,11 @@ form textarea{
     .home-text h2{
         font-size: 0.9rem;
         font-weight: 500;
+    }
+    .home-text p {
+        text-align: justify;
+        font-size: var(--p-font);
+        line-height: 1.6;
     }
     .information .info-box span{
         font-size: 1rem;
@@ -685,3 +695,10 @@ form textarea{
     font-size: 14px;
   }
 }
+
+@media (min-width: 1024px) {
+    .home-img img {
+      width: 330px;
+    }
+  }
+  
